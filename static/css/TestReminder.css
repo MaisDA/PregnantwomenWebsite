@@ -1,0 +1,758 @@
+#colorbg {
+	background-color: #F9ECEC
+}
+
+h1{
+    color:#87314e
+}
+
+#labelsize {
+	font-size: 15px
+}
+
+body {
+	background: #F4F7FD;
+	margin-top: 20px;
+}
+#copyright {
+	background-color: #F9ECEC
+}
+.card-margin {
+	margin-bottom: 1.875rem;
+}
+
+#form1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    
+}
+
+#form2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    
+}
+
+.buttonContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.signup {
+	color: #fff;
+	background-color: #c49aa8;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	width: 256px;
+	height: 64px;
+	padding: 2px; /*get started button*/
+	/* border: none; */
+	/* border-radius: 0; */
+	display: block;
+    box-shadow: 1px 15px 35px 0px rgba(0, 0, 0, 0.2) !important;
+	transition: all 0.3s ease 0s;
+    border-color: transparent !important;
+    border-radius: 12px !important;
+}
+
+
+
+.signup:hover, .form-horizontal .signup:focus {
+	background-color: #ab6f83;
+}
+
+.btn {
+	transition: all 0.5s;
+	cursor: pointer;
+  }
+  .btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .btn span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .btn:hover span {
+	padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+#rcorners2 {
+	border-radius: 25px;
+	border: 2px solid #d5d1cd;
+}
+#rcorners2:focus {
+	outline: none;
+  	border: 2px solid #968C83;
+}
+
+
+
+.submitButton{
+    margin-bottom: auto !important;
+    width:256px !important;
+    height:64px !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+    background-color: #c49aa8 !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    border-color: transparent !important;
+    color: #fff;
+    box-shadow: 1px 15px 35px 0px rgba(0, 0, 0, 0.2) !important;
+    text-align: center !important;
+}
+
+
+.card {
+	border: 0;
+	box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+	-ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #ffffff;
+	background-clip: border-box;
+	border: 1px solid #e6e4e9;
+	border-radius: 8px;
+}
+
+.card .card-header.no-border {
+	border: 0;
+}
+
+.card .card-header {
+	background: none;
+	padding: 0 0.9375rem;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	min-height: 50px;
+}
+
+.card-header:first-child {
+	border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
+}
+
+.widget-49 .widget-49-title-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ddc5cd;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day
+	{
+	color: #ab6f83;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-month
+	{
+	color: #4e73e5;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-secondary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ddc5cd;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-secondary .widget-49-date-day
+	{
+	color: #ab6f83;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-secondary .widget-49-date-month
+	{
+	color: #dde1e9;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-success {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ddc5cd;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-success .widget-49-date-day
+	{
+	color: #ab6f83;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-success .widget-49-date-month
+	{
+	color: #17d1bd;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ddc5cd;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-info .widget-49-date-day
+	{
+	color: #ab6f83;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-info .widget-49-date-month
+	{
+	color: #36afff;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-warning {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ddc5cd;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-warning .widget-49-date-day
+	{
+	color: #ab6f83;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-warning .widget-49-date-month
+	{
+	color: #FFC868;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-danger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #feeeef;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-danger .widget-49-date-day
+	{
+	color: #F95062;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-danger .widget-49-date-month
+	{
+	color: #F95062;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-light {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fefeff;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-light .widget-49-date-day
+	{
+	color: #f7f9fa;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-light .widget-49-date-month
+	{
+	color: #f7f9fa;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-dark {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ebedee;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-dark .widget-49-date-day
+	{
+	color: #394856;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-dark .widget-49-date-month
+	{
+	color: #394856;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-base {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #f0fafb;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-day
+	{
+	color: #68CBD7;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-month
+	{
+	color: #68CBD7;
+	line-height: 1;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-pro-title
+	{
+	color: #3c4142;
+	font-size: 14px;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-meeting-time
+	{
+	color: #B1BAC5;
+	font-size: 13px;
+}
+
+.widget-49 .widget-49-meeting-points {
+	font-weight: 400;
+	font-size: 13px;
+	margin-top: .5rem;
+	
+}
+
+.widget-49 .widget-49-meeting-points .widget-49-meeting-item {
+	display: list-item;
+	color: #727686;
+	
+}
+
+.widget-49 .widget-49-meeting-points .widget-49-meeting-item span {
+	margin-left: .5rem;
+	
+}
+
+.widget-49 .widget-49-meeting-action {
+	text-align: right;
+}
+
+.widget-49 .widget-49-meeting-action a {
+	text-transform: uppercase;
+}
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+
+.alignTextHEHE {
+margin-left: 7px !important;
+margin-bottom: 7px !important;
+}
+
+
+
+/*CHECKBOX-----------------------------------*/
+.toggle{
+  --uiToggleSize: var(--toggleSize, 1.25rem);
+  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+  --uiToggleColor: var(--toggleColor, #a6a6a6);
+
+  display: var(--toggleDisplay, inline-flex);
+  position: relative;
+  float: left;
+}
+
+.toggle__input{
+  /*
+  The pattern by Sara Soueidan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+  */
+  width: var(--uiToggleSize);
+  height: var(--uiToggleSize);
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+/*
+1. Calculation of the gap for the custom checkbox
+*/
+
+.toggle__label{
+  display: inline-flex;
+  min-height: var(--uiToggleSize);
+  padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, .4em));
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label{
+  cursor: pointer;
+}
+
+/*
+1. Ems helps to calculate size of the checkbox
+*/
+
+.toggle__label::after{
+  content: "";
+  box-sizing: border-box;  
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiToggleSize); /* 1 */
+
+  background-color: transparent;
+  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.toggle__input:checked ~ .toggle__label::after{
+  background-color: #a6a6a6;
+}
+
+.toggle__text{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+/*
+The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+
+1. Ems helps to calculate size and position of the arrow
+*/
+
+.toggle__label::before{
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: var(--uiToggleSize); /* 1 */
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: var(--toggleArrowColor, #fff);
+
+  position: absolute;
+  top: .5428em;
+  left: .25em;
+  z-index: 3;
+
+  transform-origin: left top;
+  transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:checked ~ .toggle__label::before{
+  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+
+  width: .4em;
+  height: .2em;
+  border-left-width: var(--uiToggleArrowWidth);
+  border-bottom-width: var(--uiToggleArrowWidth);
+}
+
+/*
+States
+*/
+
+/* focus state */
+
+.toggle:focus-within{
+  outline: var(--toggleOutlineWidthFocus, 3px) solid var(--toggleOutlineColorFocus, #ddc5cd);
+  outline-offset: var(--toggleOutlineOffsetFocus, 5px);
+}
+
+/* disabled state */
+
+.toggle__input:disabled ~ .toggle__label{
+  opacity: var(--toggleOpacityDisabled, .24);
+  cursor: var(--toggleCursorDisabled, not-allowed);
+  user-select: none;
+}
+
+/*
+=====
+PRESENTATION STYLES
+=====
+*/
+
+/* 
+The demo skin
+*/
+
+.toggle__label::after{
+  border-radius: var(--toggleBorderRadius, 2px);
+}
+
+/* 
+The animation of switching states
+*/
+
+.toggle__input:not(:disabled) ~ .toggle__label::before{
+  will-change: width, height;
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label::before{
+  opacity: 1;
+  transition: opacity .1s ease-out .25s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label::after{
+  will-change: background-color;
+  transition: background-color .2s ease-out;
+}
+
+
+.page__custom-settings{
+  --toggleColor: #690e90;
+  --toggleOutlineColorFocus: #690e90;
+  --toggleSize: 2rem;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;    
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif; 
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page{
+  box-sizing: border-box;
+  max-width: 45rem;
+  padding: 2.75rem 2rem 2.5rem;
+  margin: auto;
+  
+  background-color: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: 2px;
+}
+
+.page__section{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.page__section:nth-child(n+2){
+  margin-top: 3rem;
+}
+
+.page__custom-settings{
+   --pageToggleTextFontSize: 1.25rem;
+}
+
+.page__name{
+  width: 100%;
+}
+
+.page__name::first-letter{
+  text-transform: uppercase;
+}
+
+.page__toggle{
+  margin-top: 1.25rem;
+  margin-right: 1.5rem;
+  font-size: var(--pageToggleTextFontSize);
+}
+
+* {
+    -webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+       -moz-box-sizing: border-box; /* Firefox 1+ */
+            box-sizing: border-box; /* Chrome, IE 8+, Opera, Safari 5.1 */
+  }
+  
+
+  h3 {
+    color: grey;
+  }
+  /* body, html {
+      font-family: 'Menlo', monospace; 
+      background-color: #eee;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, ul, ol {
+      margin: 0;
+      margin-bottom: 1.5rem;
+  }
+   */
+  
+  .input-text {
+      background: #fff;
+      color: #87314e;
+      overflow: hidden;
+      width: 440px;
+      margin: 0 auto;
+      margin-top: 3rem;
+      padding: .75rem 5rem;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      box-shadow: inset 0 2px 2px rgba(0,0,0,.1);
+  }
+  
+  
+  /* Animation stuff */
+  
+  
+  .message {
+      position: relative;
+      float: left;
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0px;
+  }
+  
+  .message span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      background: #fff;
+      border-left: 4px solid #167ff0;
+  
+      -webkit-animation-name: typing, blinking;
+      -webkit-animation-duration: 2s, 1s;
+      -webkit-animation-iteration-count: 1, infinite;
+      -webkit-animation-timing-function: steps(21,end), steps(1,end);
+  
+  
+  }
+  
+  @-webkit-keyframes typing {
+    0%   { width: 100%; }
+    100% { width: 0; }
+  }
+  
+  @-webkit-keyframes blinking {
+    0%   { border-color: transparent; }
+    50% { border-color: #167ff0; }
+    100% { border-color: transparent; }
+  }

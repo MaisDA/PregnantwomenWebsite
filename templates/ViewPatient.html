@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="{{url_for('static',filename='css/View.css') }} " rel="stylesheet">
+</head>
+
+
+<body id = "colorbg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{url_for('indexNurse')}}"> <img src="{{url_for('static',filename='images/logo.png') }}" width = 50 height = 50 alt="..."> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('indexNurse')}}">Home<span class="sr-only"></span></a>
+            </li>
+                 <li class="nav-item">
+              <a class="nav-link" href="{{url_for('viewPatient')}}">View Patient Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('Talk')}}">Talk to a Patient</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+               </li>
+      
+            
+          </ul>
+      </div>
+      </nav>
+<br>
+
+<center>
+	<h1>{{userInHospitalInfo[0][6]}} Patients </h1>
+</center>
+
+<div class="container justify-content-center" id="con">
+<div class="row">
+    {% set count = 0 %}
+    {%for userInHospital in userInHospitalInfo%}
+        {% if count % 3 ==0 %}
+        {% set count = count+1%}
+            <div class="column">
+            <div class="container d-flex justify-content-center">
+            <ul class="list-group mt-5 text-white">
+            <a href="{{url_for('viewD', user_email= userInHospital[0] )}}" >
+            <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="{{url_for('static',filename='images/files.png') }}" width="40" />
+            <div class="ml-2">
+            <h5 class="mt-2">{{userInHospital[1]}} </h5>
+            </div>
+            </div>
+            </li>
+            </a>
+        </div>
+    </div>
+            
+
+        {% else %}
+        {% set count = count+1 %}
+        {% if count % 2 ==0 %}
+        <a href="{{url_for('viewD', user_email= userInHospital[0] )}}" >
+            <li class="list-group-item d-flex justify-content-between align-content-center">
+                <div class="d-flex flex-row"> <img src="{{url_for('static',filename='images/files.png') }}" width="40" />
+                    <div class="ml-2">
+                        <h5 class="mt-2">{{userInHospital[1]}}</h5>
+                    </div>
+                </div>
+            </li>
+            </a>
+        </ul>
+    </div>
+    </div>
+
+
+
+        {% else %}
+        <a href="{{url_for('viewD', user_email= userInHospital[0] )}}" >
+            <li class="list-group-item d-flex justify-content-between align-content-center">
+                <div class="d-flex flex-row"> <img src="{{url_for('static',filename='images/files.png') }}" width="40" />
+                    <div class="ml-2">
+                        <h5 class="mt-2">{{userInHospital[1]}}</h5>
+                    </div>
+                </div>
+            </li>
+            </a>
+
+        {% endif %}
+
+        
+        {% endif %}
+
+    {%endfor%}
+
+
+
+  
+ 
+  </div>
+</div>
+</div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+	<div class="container">
+	<center>
+	<h6>Copyright © PWH 2022</h6>
+	</center>
+	</div>
+	</div>
+
+</body>
+</html>

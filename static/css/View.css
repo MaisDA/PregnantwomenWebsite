@@ -1,0 +1,135 @@
+#colorbg {
+	background-color: #F9ECEC
+	}
+#con{
+margin: auto;
+}
+.column {
+  float: left;
+  width: 30%;
+  margin: auto;
+}
+#con2{
+width:auto;
+height: 2px;
+/* background-color: transparent; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+    background: #c49aa8
+}
+
+.list-group {
+    width: 400px !important
+}
+
+.list-group-item {
+    margin-top: 10px;
+    border-radius: none;
+    background: #c49aa8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+.list-group-item:hover {
+    transform: scaleX(1.1)
+}
+
+
+.list-group-item:hover .check {
+    opacity: 1
+}
+
+.about span {
+    font-size: 12px;
+    margin-right: 10px
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0;
+    border: 1px solid #10a3f9;
+    border-radius: 3px;
+    background-color: white
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid #007bff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px
+}
+
+input[type="checkbox"]:checked+.check {
+    opacity: 1
+}
+#medication {
+	color: #fff;
+	background-color: #87314e;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	/* 	text-transform: uppercase; */
+	width: 100px;
+	height: 40px;
+	padding: 2px; /*get started button*/
+	border: none;
+	border-radius: 0;
+	display: block;
+	transition: all 0.3s ease 0s;
+}
+
+#medication:hover, #medication:focus {
+	background-color: #ab6f83;
+}
+a{
+color: white;
+}
+a:link { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+
+a:visited { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+
+a:hover {
+ text-decoration: none;
+ text-decoration-color: white; 
+ color: white;
+}
+
+a:active { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+
+#copyright {
+	background-color: #F9ECEC
+}

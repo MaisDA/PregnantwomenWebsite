@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<style>
+#colorbg {
+	background-color: #F9ECEC
+	}
+#con{
+margin: auto;
+}
+.column {
+  float: left;
+  width: 30%;
+  margin: auto;
+}
+#con2{
+width:auto;
+height: 2px;
+/* background-color: transparent; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+    background: #c49aa8
+}
+
+.list-group {
+    width: 400px !important
+}
+
+.list-group-item {
+    margin-top: 10px;
+    border-radius: none;
+    background: #c49aa8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+.list-group-item:hover {
+    transform: scaleX(1.1)
+}
+
+
+.list-group-item:hover .check {
+    opacity: 1
+}
+
+.about span {
+    font-size: 12px;
+    margin-right: 10px
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0;
+    border: 1px solid #10a3f9;
+    border-radius: 3px;
+    background-color: white
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid #007bff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px
+}
+
+input[type="checkbox"]:checked+.check {
+    opacity: 1
+}
+#medication {
+	color: #fff;
+	background-color: #87314e;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	/* 	text-transform: uppercase; */
+	width: 100px;
+	height: 40px;
+	padding: 2px; /*get started button*/
+	border: none;
+	border-radius: 0;
+	display: block;
+	transition: all 0.3s ease 0s;
+}
+
+#medication:hover, #medication:focus {
+	background-color: #ab6f83;
+}
+a{
+color: white;
+}
+a:link { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+
+a:visited { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+
+a:hover {
+ text-decoration: none;
+ text-decoration-color: white; 
+ color: white;
+}
+
+a:active { 
+text-decoration: none; 
+text-decoration-color: white;
+}
+</style>
+
+<body id = "colorbg">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"> <img src="logo.png" width = 50 height = 50 alt="..."> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="Homepage.html">Home<span class="sr-only"></span></a>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="TestReminder.html">Test Reminder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Medication.html">Medication Reminder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Communication.html">Talk to a Nurse</a>
+      </li>
+    
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+          Reports
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Upload.html">Upload Reports</a>
+          <a class="dropdown-item" href="View.html">View Reports</a>
+        </div>
+      </li>
+
+      
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="SignUp.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<div class="container justify-content-center" id="con">
+<div class="row">
+  <div class="column">
+  <div class="container d-flex justify-content-center">
+    <ul class="list-group mt-5 text-white">
+    <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">blood test</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+        
+        <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">ultrasound</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+    </ul>
+</div>
+  </div>
+  <div class="column">
+    <div class="container d-flex justify-content-center">
+    <ul class="list-group mt-5 text-white">
+    <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">urine test</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+        <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">test 2</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+    </ul>
+</div>
+  </div>
+  <div class="column">
+    <div class="container d-flex justify-content-center">
+    <ul class="list-group mt-5 text-white">
+    <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">test reminder</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+        <a href="" >
+        <li class="list-group-item d-flex justify-content-between align-content-center">
+            <div class="d-flex flex-row"> <img src="files.png" width="40" />
+                <div class="ml-2">
+                    <h5 class="mt-2">pelvic test</h5>
+                </div>
+            </div>
+        </li>
+        </a>
+    </ul>
+</div>
+  </div>
+</div>
+</div>
+</body>
+</html>
